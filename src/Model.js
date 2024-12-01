@@ -17,9 +17,54 @@ const latLongToVector3 = (lat, long, radius) => {
 
 const CITY_MARKERS = [
     {
-      name: "Paris", // Nom de la ville
-      lat: -11, // Latitude
-      long: -37, // Longitude
+      name: "Heraklion",
+      lat: 35.3400, // Latitude
+      long: 25.1300, // Longitude
+      color: "#8B0000", // Couleur du marqueur
+      info: {
+        title: "Heraklion Data Node",
+        description: "Centre stratégique pour la Méditerranée",
+        stats: {
+          servers: "800+",
+          uptime: "99.995%",
+          clients: "150+"
+        }
+      }
+    },
+    {
+      name: "Klaipeda",
+      lat: 55.7100, // Latitude
+      long: 21.1200, // Longitude
+      color: "#006400", // Couleur du marqueur
+      info: {
+        title: "Klaipeda Digital Center",
+        description: "Hub clé pour les États baltes",
+        stats: {
+          servers: "900+",
+          uptime: "99.996%",
+          clients: "200+"
+        }
+      }
+    },
+    {
+      name: "Charnay",
+      lat: 46.3000, // Latitude
+      long: 4.8300, // Longitude
+      color: "#4682B4", // Couleur du marqueur
+      info: {
+        title: "Charnay Tech Node",
+        description: "Centre de support technologique régional",
+        stats: {
+          servers: "600+",
+          uptime: "99.994%",
+          clients: "100+"
+        }
+      }
+    },
+    {
+      name: "Paris",
+      lat: 48.8566, // Latitude
+      long: 2.3522, // Longitude
       color: "#02367b", // Couleur du marqueur
       info: {
         title: "Paris Data Center",
@@ -32,51 +77,37 @@ const CITY_MARKERS = [
       }
     },
     {
-      name: "New York",
-      lat: -43,
-      long: -74.0060,
-      color: "#ff3366",
+      name: "Kingston",
+      lat: 41.4800, // Latitude
+      long: -71.5200, // Longitude
+      color: "#FF8C00", // Couleur du marqueur
       info: {
-        title: "NYC Cloud Hub",
-        description: "Principal hub cloud pour l'Amérique",
-        stats: {
-          servers: "2000+",
-          uptime: "99.999%",
-          clients: "500+"
-        }
-      }
-    },
-    {
-      name: "Tokyo",
-      lat: 32,
-      long: 200,
-      color: "#ffcc00",
-      info: {
-        title: "Tokyo Tech Center",
-        description: "Centre technologique Asie-Pacifique",
-        stats: {
-          servers: "1800+",
-          uptime: "99.998%",
-          clients: "400+"
-        }
-      }
-    },
-    {
-      name: "Sydney",
-      lat: 25,
-      long: 138,
-      color: "#00ccff",
-      info: {
-        title: "Sydney Data Hub",
-        description: "Hub principal pour l'Océanie",
+        title: "Kingston Cloud Hub",
+        description: "Centre cloud régional pour la côte Est",
         stats: {
           servers: "1200+",
           uptime: "99.997%",
           clients: "250+"
         }
       }
+    },
+    {
+      name: "Skopje",
+      lat: 41.9981, // Latitude
+      long: 21.4254, // Longitude
+      color: "#800080", // Couleur du marqueur
+      info: {
+        title: "Skopje Innovation Hub",
+        description: "Centre de données pour l'Europe du Sud-Est",
+        stats: {
+          servers: "1100+",
+          uptime: "99.996%",
+          clients: "220+"
+        }
+      }
     }
   ];
+  
 
   export function Model(props) {
     const { nodes, materials} = useGLTF('/earthquakes_-_2000_to_2019.glb')

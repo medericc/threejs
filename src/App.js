@@ -132,40 +132,41 @@ function App() {
 
         <div className='mx-auto mt-8 md:mt-16 px-4 md:px-0 container'>
           <div className='flex md:flex-row flex-col'>
-            {/* section gauche */}
-            <div className='mb-8 md:mb-0 w-full md:w-1/2'>
-              <div className='flex flex-col justify-center'>
-                <h1 className='relative mb-4 font-bold text-4xl md:text-5xl'>
-                  <span className='block title-line'>Révolutionnez votre{' '}</span>
-                  <span className='block title-line'><span className='text-green-400'>entourage</span></span>
-                  <span className='block title-line'>avec le pouvoir</span>
-                  <span className='block title-line'>de <span className='text-green-400'>Jésus</span>.</span>
-                </h1>
-                <p className='mb-8 w-full md:w-[90%] text-gray-300 text-lg md:text-xl description '>
-                Une communion profonde et un partage authentique 
-                pour avancer ensemble dans la lumière de Dieu.
-                </p>
-                <div className='flex md:flex-row flex-col space-y-4 md:space-x-9 md:space-y-0'>
-                  <button className=' button relative bg-green-400 px-6 py-2 rounded-lg w-full md:w-[200px] font-medium text-xl transition-all duration-300'>
-                    Commencer
-                  </button>
-                  <button className=' button relative border-2 border-green-400 hover:bg-green-400 px-6 py-2 rounded-lg w-full md:w-[200px] font-medium text-xl transition-all duration-300'>
-                    Contact
-                  </button>
-                </div>
-                <div className='flex md:flex-row flex-col justify-around items-center border-[#808080] border-2 bg-[#808080]/50 backdrop-blur-xl mx-4 mt-10 mx-md:mr-0 p-4 md:p-2 rounded-lg instructions '>
-                  <div className='mb-4 md:mb-0 text-left'>
-                    <h3 className='mb-2 font-bold text-green-400 text-xl md:text-2xl'>Le parcours de la chrétienté.</h3>
-                    <ul className='text-base text-white md:text-lg'>
-                      <li>Survolez les points</li>
-                      <li>Cliquez sur les points pour voir les détails</li>
-                      <li>Faites pivoter le globe avec la souris</li>
-                    </ul>
-                  </div>
-                  <img src={dataImg} alt='imgInfo' className='w-[100px] md:w-[150]' />
-                </div>
-              </div>
-            </div>
+          {/* section gauche */}
+<div className='mb-8 md:mb-0 w-full md:w-1/2'>
+  <div className='flex flex-col justify-center'>
+    <h1 className='relative mb-4 font-bold text-4xl md:text-5xl'>
+      <span className='block title-line'>Découvrez le parcours{' '}</span>
+      <span className='block title-line'><span className='text-green-400'>dévoué</span></span>
+      <span className='block title-line'>de la meneuse</span>
+      <span className='block title-line'>et capitaine de <span className='text-green-400'>Rhody</span>.</span>
+    </h1>
+    <p className='mb-8 w-full md:w-[90%] text-gray-300 text-lg md:text-xl description '>
+      De son entrée au Pole Espoir à son titre de MVP de la finale de l'EuroBasket en 2023, en
+      qui continuant d'évoluer à Rhode Island.
+    </p>
+    <div className='flex md:flex-row flex-col space-y-4 md:space-x-9 md:space-y-0'>
+      <button className=' button relative bg-green-400 px-6 py-2 rounded-lg w-full md:w-[200px] font-medium text-xl transition-all duration-300'>
+        En savoir plus
+      </button>
+      <button className=' button relative border-2 border-green-400 hover:bg-green-400 px-6 py-2 rounded-lg w-full md:w-[200px] font-medium text-xl transition-all duration-300'>
+        Contact
+      </button>
+    </div>
+    <div className='flex md:flex-row flex-col justify-around items-center border-[#808080] border-2 bg-[#808080]/50 backdrop-blur-xl mx-4 mt-10 mx-md:mr-0 p-4 md:p-2 rounded-lg instructions '>
+      <div className='mb-4 md:mb-0 text-left'>
+        <h3 className='mb-2 font-bold text-green-400 text-xl md:text-2xl'>Suivez son ascension.</h3>
+        <ul className='text-base text-white md:text-lg'>
+          <li>Survole les points</li>
+          <li>Clique sur les points pour voir les détails</li>
+          <li>Explore son parcours jusqu'en NCAA</li>
+        </ul>
+      </div>
+      <img src={dataImg} alt='imgInfo' className='w-[100px] md:w-[150]' />
+    </div>
+  </div>
+</div>
+
             <div className='relative right-section w-full md:w-1/2 h-[400px] md:h-[600px]'>
               <Canvas
               camera={{
