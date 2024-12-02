@@ -9,6 +9,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import InteractiveMap from './components/InteractiveMap';
+import Timeline from './components/Timeline';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -193,6 +195,8 @@ function App() {
               </Canvas>
             </div>
           </div>
+          <InteractiveMap />
+          <Timeline />
         </div>
 
       </div>
