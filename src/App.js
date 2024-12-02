@@ -7,6 +7,7 @@ import Timeline from './components/Timeline';
 import Biography from './components/Biography';
 import Footer from './components/Footer';
 import Stats from './components/Stats'; // Import de la page Stats
+import CommentSection from './components/Contact';
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
             <Travel />
             <Biography />
             <Timeline />
+            <CommentSection />
           </>
         } />
         <Route path="/stats" element={<Stats />} />
       </Routes>
-
+    
       {/* Footer */}
       <Footer />
     </div>
